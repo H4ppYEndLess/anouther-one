@@ -1,0 +1,26 @@
+.stroke {
+    padding: 268px 0 !important;
+    background-image: url(../images/ab.jfif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    &__slider {
+    }
+
+    &__wrapper {
+        text-align: center;
+    }
+
+    &__slide {
+        color: $main-color;
+        font-size: 110px;
+        font-weight: 400;
+        max-width: 100%;
+        @include media(480px){
+            font-size: 72px;
+        }
+        @include media(320px){
+            font-size: 48px;
+        }
+    }
+}

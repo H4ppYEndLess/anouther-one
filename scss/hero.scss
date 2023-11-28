@@ -1,0 +1,24 @@
+.hero {
+    background-image: url(../images/hero.jfif);
+    padding: 260px 0 80px 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;
+    &__logo {
+        margin: auto;
+        @include media(480px){
+            width: 80%;
+        }
+    }
+    @include media(480px){
+        background-image: url(../images/hero-mobile.png);         
+    }
+
+    &__title {
+        color: white;
+        font-size: 56px;
+        font-weight: 700;
+        margin-top: 120px;
+    }
+}

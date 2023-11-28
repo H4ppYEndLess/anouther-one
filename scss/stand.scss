@@ -1,0 +1,47 @@
+@import './variables';
+@import './mixin.scss';
+
+.stand {
+    background-color: white;
+    flex-direction: column;
+    text-align: center;
+    flex-wrap: wrap;
+    align-content: center;
+    padding: 90px 0;
+    color: $main-color;
+    @include media(480px){
+        padding: 20px 0;
+    }
+    &__title {
+        font-size: 28px;
+        font-weight: 700;
+        margin-bottom: 55px;
+        @include media(480px){
+            margin-bottom: 20px;
+        }
+    }
+
+    &__list {
+        display: flex;
+        align-items: center;
+        gap: 40px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    &__item {
+        max-width: 115px;
+        padding: 15px 30px;
+    }
+
+    &__icon {
+    }
+
+    &__text {
+        font-size: 13px;
+        line-height: 15px;
+        margin-top: 25px;
+    }
+}
+.container {
+}
