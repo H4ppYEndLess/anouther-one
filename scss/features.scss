@@ -42,7 +42,7 @@
         margin-top: 25px;
     }
     &__image{
-        width: 50vw;
+        width: 50%;
         @include media(480px){
             width: 100%;
             height: auto;   
