@@ -14,6 +14,7 @@
         width: 100%;
         z-index: 998;
         left: -100%;
+        top: 0;
         transition: 300ms ease-in;
     }
 }
@@ -30,6 +31,7 @@ header{
         width: 100%;
         z-index: 990;
         left: 0;
+        top: 0;
         transition: 300ms ease-in;
     }
     &__logo {
@@ -39,6 +41,7 @@ header{
     }
 
     &__list {
+        padding-top: 64px;
         display: flex;
         flex-direction: column;
         gap: 50px;
