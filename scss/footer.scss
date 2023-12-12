@@ -10,6 +10,7 @@
     font-size: 12px;
     flex-wrap: wrap;
     justify-content: space-between;
+    gap: 15px;
     @include media(768px){
         justify-content: center;
         gap: 25px;
@@ -31,7 +32,7 @@
         & a{
             transition: 250ms ease-in;
                 &:hover{
-                    color: black !important;
+                    color: white !important;
                 }
         }
     }
@@ -51,7 +52,7 @@
         }
         &:hover svg,
         &:focus svg{
-            fill: black;            
+            fill: white;            
         }
     }
 
@@ -81,8 +82,13 @@
         &::placeholder{
             font-size: 12px;
             color: $second-color;
+            transition: 250ms ease-in;
         }
+        &:hover,
         &:focus{
+            &::placeholder{
+                color: white;
+            }
             outline: none;
         }
     }

@@ -48,7 +48,7 @@ header {
     &__item {
         transition: 250ms ease-in;
         &:hover{
-            color: black;
+            color: $second-color;
         }
     }
 }
