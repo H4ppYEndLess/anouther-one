@@ -5,7 +5,7 @@
     background-color: $main-color;
     display: flex;
     align-items: center;
-    padding: 68px 150px;
+    padding: 50px 5%;
     color: $second-color;
     font-size: 12px;
     flex-wrap: wrap;
@@ -15,10 +15,7 @@
         justify-content: center;
         gap: 25px;
         flex-direction: column;
-    }
-    @include media(480px){
-            padding: 68px 40px;
-            font-size: 16px;
+        font-size: 16px;
     }
     &__Copyright {
     }
@@ -45,7 +42,7 @@
     &__social {
         & svg{
             transition: 250ms ease-in;
-            @include media(480px){
+            @include media(786px){
                 width: 30px;
                 height: 30px;
             }

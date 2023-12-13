@@ -11,8 +11,11 @@
         position: absolute;
         top: 20%;
         left: 20%;
-        @include media(480px){
+        @include media(700px){
             position: static;
+            margin: auto;
+            text-align: center;
+            padding: 50px 0;
         }
     }
 
@@ -21,8 +24,13 @@
         font-weight: 700;
         line-height: 100px;
         color: $main-color;
-        @include media(480px){
+        @include media(700px){
             text-align: center;
+            font-size: 72px;
+        }
+        @include media(700px){
+            font-size: 52px;
+            line-height: unset;
         }
     }
 
@@ -42,17 +50,14 @@
         }
         @include media(768px){
             margin-top: 10%;
-            background-color: $second-color;
-        }
-        @include media(480px){
-            width: 100%;  
             background-color:$main-color ;
             color: $second-color; 
             &:hover{
-                background-color: $second-color;
+                background-color: transparent;
                 color: $main-color;
             }
         }
+        
     }
 
     &__image {

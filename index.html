@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="icon" href="./images/logo.png">
+    <link rel="icon" href="./images/favicon.png">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
@@ -21,9 +21,9 @@
             </ul>
             <img src="./images/logo.png" alt="logo" class="menu__logo">
         </div>
-        <div class="burger burger_close" open-menu>
+        <button type="button" class="burger burger_close" open-menu>
             <span></span>
-        </div>
+        </button>
         <nav>
             <ul class="header__list">
                 <li class="header__item"><a href="#better">Better</a></li>
@@ -87,16 +87,16 @@
         </section>
         <section class="stroke">
             <div class="stroke__slider swiper">
-                <div class="stroke__wrapper swiper-wrapper">
-                    <h2 class="stroke__slide swiper-slide">Vitamins.</h2>
-                    <h2 class="stroke__slide swiper-slide">Vegan.</h2>
-                    <h2 class="stroke__slide swiper-slide">Cruelty Free.</h2>
-                </div>
+                <ul class="stroke__wrapper swiper-wrapper">
+                    <li class="stroke__slide swiper-slide"><h2>Vitamins.</h2></li>
+                    <li class="stroke__slide swiper-slide"><h2>Vegan.</h2></li>
+                    <li class="stroke__slide swiper-slide"><h2>Cruelty Free.</h2></li>
+                </ul>
             </div>        
         </section>
         <section class="features" id="better">
-            <div class="features__container">
-                <div class="features__content">
+            <ul class="features__container">
+                <li class="features__content">
                     <img src="./images/feature1.png" alt="feature" height="auto" class="features__image">
                     <div class="features__item">
                         <svg class="features__icon" width="40px" height="40px">
@@ -109,8 +109,8 @@
                         <p class="features__text">We found a better way – a biodegradable toothpaste tube. The first of its kind in Australia. Our game-changing tube breaks down in landfill in just 6-10 years.</p>
                         <p class="features__text">Make a difference, every time you brush. (That’s twice a day if you’re playing along at home.)</p>
                     </div>
-                </div>
-                <div class="features__content">
+                </li>
+                <li class="features__content_reverse">
                     <div class="features__item">
                         <svg class="features__icon" width="40px" height="40px">
                             <use href="./images/svg/icons.svg#flower"/>
@@ -123,8 +123,8 @@
                         <p class="features__text">Make a difference, every time you brush. (That’s twice a day if you’re playing along at home.)</p>
                     </div>
                     <img src="./images/feature2.jfif" alt="feature" height="auto" class="features__image">
-                </div>
-                <div class="features__content">
+                </li>
+                <li class="features__content">
                     <img src="./images/feature3.jfif" alt="feature" height="auto" class="features__image">
                     <div class="features__item">
                         <svg class="features__icon" width="40px" height="40px">
@@ -137,10 +137,10 @@
                         <p class="features__text">We found a better way – a biodegradable toothpaste tube. The first of its kind in Australia. Our game-changing tube breaks down in landfill in just 6-10 years.</p>
                         <p class="features__text">Make a difference, every time you brush. (That’s twice a day if you’re playing along at home.)</p>
                     </div>
-                </div>               
-            </div>
+                </li>               
+            </ul>
         </section>
-        <section class="stand">
+        <section>
             <div class="container stand">
                 <h2 class="stand__title">What we stand for</h2>
                 <ul class="stand__list">
@@ -201,7 +201,7 @@
                 <h2 class="get__title">
                     Get it in your mouth.
                 </h2>
-                <button class="get__button" type="button">
+                <button class="get__button" type="button" data-modal-open>
                     shopp all products
                 </button>
             </div>

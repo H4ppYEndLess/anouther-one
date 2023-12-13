@@ -1,6 +1,6 @@
 (() => {
     const refs = {
-        openModalBtn: document.querySelector("[data-modal-open]"),
+        openModalBtn: document.querySelectorAll("[data-modal-open]"),
         closeModalBtn: document.querySelector("[data-modal-close]"),
         modal: document.querySelector("[data-modal]"),
     };
@@ -22,7 +22,10 @@
         refs.modal.classList.add("is-hidden");
         enableScroll();
     }
-  
-    refs.openModalBtn.addEventListener("click", openModal);
+
+    refs.openModalBtn.forEach(element => {
+        element.addEventListener("click", openModal);
+    });
+
     refs.closeModalBtn.addEventListener("click", closeModal);
   })();

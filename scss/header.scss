@@ -11,7 +11,7 @@ header {
     letter-spacing: 0.2px;
     display: flex;
     align-items: center;
-    @include media(480px){
+    @include media(570px){
         padding: 15px 30px;   
     }
     
@@ -21,7 +21,7 @@ header {
     &__list {
         display: flex;
         gap: 35px;
-        @include media(480px){
+        @include media(570px){
             display: none;   
         }
     }
@@ -35,7 +35,7 @@ header {
         border-radius: 3px;
         color: $second-color;
         cursor: pointer;
-        @include media(480px){
+        @include media(570px){
             margin-left: unset;
             margin-right: auto;   
         }

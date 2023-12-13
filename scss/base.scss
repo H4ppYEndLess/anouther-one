@@ -12,6 +12,9 @@ html{
     scroll-behavior: smooth
 }
 
+main{
+    overflow: hidden;
+}
 
 .container{
     max-width: 90vw;

@@ -1,5 +1,6 @@
 (() => {
     const refs = {
+        links:document.querySelectorAll('.menu__link'),
         menu:document.querySelector('[open-menu]'),
         opened: document.querySelector('[menu]'),
         back: document.querySelector('backdrop'),
@@ -11,4 +12,8 @@
       document.body.classList.toggle("lock")
     }
     refs.menu.addEventListener("click", openMenu);
+
+    refs.links.forEach(element => {
+      element.addEventListener("click", openMenu);
+  });
   })();
