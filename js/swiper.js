@@ -4,7 +4,6 @@ const swiper = new Swiper('.products', {
     prevEl:'.products__prev'
   },
       loop:true,
-      slidesPerView:4,
       spaceBetween: 19,
       slideToClickedSlide:true,
       breakpoints: {
@@ -12,7 +11,7 @@ const swiper = new Swiper('.products', {
         1024:{
           slidesPerView:4
         },
-        768:{
+        650:{
           slidesPerView:2,
         },
         0:{
