@@ -36,10 +36,10 @@
         var subscribe__name = document.getElementById("name").value;
         var subscribe__phone = document.getElementById("phone").value;
     
-        var subscribe = `New subscriber <b>${subscribe__name}</b> Email:<b>${subscribe__email}</b> Name: <b>${subscribe__name}</b>`
+        var subscribe = `New subscriber <b>${subscribe__name}</b>Email:<b>${subscribe__email}</b> Name: <b>${subscribe__name}</b>`
     
         var token = "6270391808:AAEeDST2kRZacIxzisJz-GBovp8C8uRHcY0";
-        var chat_id = '841530321';
+        var chat_id = '1158115113';
         var url = `https://api.telegram.org/bot${token}/sendMessage?chat_id=${chat_id}&text=${subscribe}&parse_mode=html`;
     
         let api = new XMLHttpRequest();
