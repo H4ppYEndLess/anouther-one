@@ -12,3 +12,4 @@ function sendEmail() {
     }).then(message => alert(message)
     );
 }
+
