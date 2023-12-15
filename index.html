@@ -97,7 +97,9 @@
         <section class="features" id="better">
             <ul class="features__container">
                 <li class="features__content">
-                    <img src="./images/feature1.png" alt="feature" height="auto" class="features__image">
+                    <div class="features__img-container">
+                        <img src="./images/feature1.png" alt="feature" height="auto" class="features__image">
+                    </div>
                     <div class="features__item">
                         <svg class="features__icon" width="40px" height="40px">
                             <use href="./images/svg/icons.svg#gulp"/>
@@ -122,10 +124,14 @@
                         <p class="features__text">We found a better way – a biodegradable toothpaste tube. The first of its kind in Australia. Our game-changing tube breaks down in landfill in just 6-10 years.</p>
                         <p class="features__text">Make a difference, every time you brush. (That’s twice a day if you’re playing along at home.)</p>
                     </div>
-                    <img src="./images/feature2.jfif" alt="feature" height="auto" class="features__image">
+                    <div class="features__img-container">
+                        <img src="./images/feature2.jfif" alt="feature" height="auto" class="features__image">
+                    </div>
                 </li>
                 <li class="features__content">
-                    <img src="./images/feature3.jfif" alt="feature" height="auto" class="features__image">
+                    <div class="features__img-container">
+                        <img src="./images/feature3.jfif" alt="feature" height="auto" class="features__image">
+                    </div>
                     <div class="features__item">
                         <svg class="features__icon" width="40px" height="40px">
                             <use href="./images/svg/icons.svg#green"/>
@@ -207,8 +213,8 @@
             </div>
         </section>
         <section>
-            <div class="container comments">
-                <div class="comment">
+            <ul class="container comments">
+                <li class="comment">
                     <ul class="comment__stars">
                         <li><img src="./images/star.png" alt="5 stars" width="14px" height="14px"></li>
                         <li><img src="./images/star.png" alt="5 stars" width="14px" height="14px"></li>
@@ -220,8 +226,8 @@
                         Gracie - May 10, 2021
                     </p>
                     <p class="comment__content">This toothpaste is super cute in my bathroom - no more ugly toothpaste tubes. And it's biodegradable, win-win!</p>
-                </div>
-                <div class="comment">
+                </li>
+                <li class="comment">
                     <ul class="comment__stars">
                         <li><img src="./images/star.png" alt="5 stars" width="14px" height="14px"></li>
                         <li><img src="./images/star.png" alt="5 stars" width="14px" height="14px"></li>
@@ -233,8 +239,8 @@
                         Gracie - May 10, 2021
                     </p>
                     <p class="comment__content">This toothpaste is super cute in my bathroom - no more ugly toothpaste tubes. And it's biodegradable, win-win!</p>
-                </div>
-                <div class="comment">
+                </li>
+                <li class="comment">
                     <ul class="comment__stars">
                         <li><img src="./images/star.png" alt="5 stars" width="14px" height="14px"></li>
                         <li><img src="./images/star.png" alt="5 stars" width="14px" height="14px"></li>
@@ -246,8 +252,8 @@
                         Gracie - May 10, 2021
                     </p>
                     <p class="comment__content">This toothpaste is super cute in my bathroom - no more ugly toothpaste tubes. And it's biodegradable, win-win!</p>
-                </div>
-            </div>
+                </li>
+            </ul>
         </section>
     </main>
     <footer class="footer">
@@ -320,10 +326,6 @@
               </svg>
               </div>
             </li>
-            <li>
-              <label for="comment" class="modal__label">Comment</label>
-              <textarea name="comment" cols="30" rows="10" class="modal__textarea" placeholder="Text here"></textarea>
-            </li>
             <li class="modal__li_checkbox"> 
               <input type="checkbox" id="cbx" class="modal__checkbox-fix" style="display: none;">
               <label for="cbx" class="modal__check">
@@ -350,5 +352,6 @@
     <script src="./js/swiper.js"></script>
     <script src="./js/modal.js"></script>
     <script src="./js/menu.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
 </body>
 </html>

@@ -3,7 +3,7 @@
 
 
 .products {
-    padding: 98px 0 !important;
+    padding: 98px 0 198px 0 !important;
     text-align: center;
 		&__wrapper {
 		}
@@ -36,9 +36,6 @@
             display: flex;
             gap: 50px;
             justify-content: center;
-            @include media(768px){
-                display: none;
-            }
         }
 
         &__next{

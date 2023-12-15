@@ -32,6 +32,9 @@
         max-width: 90vw;
         min-width: 300px;
     }
+    @include media(480px){
+        padding: 20px;
+    }
     @include media(320px){
         width: 100vw;
         padding: 5px;

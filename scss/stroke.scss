@@ -1,9 +1,15 @@
 .stroke {
-    padding: 268px 0 !important;
+    padding: 180px 0 ;
     background-image: url(../images/ab.jfif);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    @include media(800px){
+        padding: 144px 0;
+    }   
+    @include media(480px){
+        padding: 72px 0;
+    }   
     &__slider {
     }
 
@@ -16,11 +22,11 @@
         font-size: 110px;
         font-weight: 400;
         max-width: 100%;
-        @include media(480px){
+        @include media(800px){
             font-size: 72px;
-        }
-        @include media(320px){
+        }   
+        @include media(480px){
             font-size: 48px;
-        }
+        }   
     }
 }

@@ -13,13 +13,16 @@
 
     &__content {
         display: flex;
-        @include media(830px){
+        @include media(1020px){
             flex-direction: column;   
+            padding: unset;
         }
         &_reverse{
             display: flex;
-            @include media(830px){
-                flex-direction: column-reverse;   
+            padding: 25px 0;
+            @include media(1020px){
+                flex-direction: column-reverse;
+                padding: unset;
             }
         }
     }
@@ -48,10 +51,12 @@
         margin-top: 25px;
     }
     &__image{
-        width: 50%;
-        @include media(830px){
-            width: 100%;
-            height: auto;   
-        }
+        width: 100%;
+        height: auto;
+    }
+
+    &__img-container{
+        max-height: 60vh;
+        overflow: hidden;
     }
 }
