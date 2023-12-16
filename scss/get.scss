@@ -62,7 +62,9 @@
 
     &__image {
         padding:150px;
-        margin-left: auto;
+        & img{
+            margin-left: auto;
+        }
         @include media(768px){
             padding: 0;
             max-width: 100%;

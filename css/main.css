@@ -472,6 +472,8 @@ body {
 }
 .get__image {
 	padding: 150px;
+}
+.get__image img {
 	margin-left: auto;
 }
 @media (max-width: 768px) {
