@@ -1,0 +1,107 @@
+@import './variables';
+@import './mixin.scss';
+
+.footer {
+    background-color: $main-color;
+    display: flex;
+    align-items: center;
+    padding: 50px 5%;
+    color: $second-color;
+    font-size: 12px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 15px;
+    @include media(768px){
+        justify-content: center;
+        gap: 25px;
+        flex-direction: column;
+        font-size: 16px;
+    }
+    &__Copyright {
+    }
+
+    &__list {
+        display: flex;
+        gap: 24px;
+        flex-wrap: wrap;
+        justify-content: center;
+       
+        & a{
+            transition: 250ms ease-in;
+                &:hover{
+                    color: white !important;
+                }
+        }
+    }
+
+    &__socials {
+        display: flex;
+        gap: 24px;
+    }
+
+    &__social {
+        & svg{
+            transition: 250ms ease-in;
+            @include media(786px){
+                width: 30px;
+                height: 30px;
+            }
+        }
+        &:hover svg,
+        &:focus svg{
+            fill: white;            
+        }
+    }
+
+    &__icon {
+        fill: $second-color;
+    }
+
+    &__form {
+        @include media(480px){
+         display: flex;
+         flex-direction: column;
+         gap: 15px;   
+         width: 100%;
+        }
+    }
+
+    &__input {
+        border: 1px solid $second-color;
+        border-radius: 3px;
+        background-color: transparent;
+        padding: 10px;
+        font-size: 12px;
+        color: white;
+        @include media(480px){
+            width: 100%;   
+        }
+        &::placeholder{
+            font-size: 12px;
+            color: $second-color;
+            transition: 250ms ease-in;
+        }
+        &:hover,
+        &:focus{
+            &::placeholder{
+                color: white;
+            }
+            outline: none;
+        }
+    }
+
+    &__button {
+        padding: 10px 25px;
+        border: 1px solid $second-color;
+        border-radius: 3px;
+        transition: 250ms ease-in;
+        @include media(480px){
+            width: 100%;   
+        }
+        &:hover,
+        &:focus{
+            background-color: $second-color;
+            color: $main-color;
+        }
+    }
+}

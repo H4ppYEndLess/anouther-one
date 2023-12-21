@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" href="./images/favicon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <title>ROCC</title>
+</head>
+<body>
+    <header class="header">
+        <div class="section_menu menu" menu>   
+            <ul class="menu__list">
+                <li class="menu__link"><a href="#better">Better</a></li>
+                <li class="menu__link"><a href="#shop">Shop</a></li>
+                <li class="menu__link"><a href="#sub">subscription</a></li>
+            </ul>
+            <img src="./images/logo.png" alt="logo" class="menu__logo">
+        </div>
+        <button type="button" class="burger burger_close" open-menu>
+            <span></span>
+        </button>
+        <nav>
+            <ul class="header__list">
+                <li class="header__item"><a href="#better">Better</a></li>
+                <li class="header__item"><a href="#shop">Shop</a></li>
+                <li class="header__item"><a href="#sub">Subscription</a></li>
+            </ul>
+        </nav>
+        <div class="header__contact" data-modal-open>
+            Contact us
+        </div>
+    </header>
+    <main>        
+        <section class="hero">
+            <img src="./images/logo.png" alt="ROCC" class="hero__logo" height="100%" width="auto">
+            <h2 class="hero__title">Natural + Sustainable Oral Care</h2>            
+        </section>
+        <section>
+            <div class="container hidden">
+                <div class="swiper products" id="shop">
+                    <h2 class="products__name">We’re refreshing, but not just because we’re toothpaste.</h2>
+                    <div class="swiper-wrapper products__wrapper">
+                        <div class="swiper-slide products__slide">
+                            <img src="./images/paste.jfif" alt="product"  height="auto" width="100%" class="products__image">
+                            <p class="products__title">Vitamin B12 Mint + Coconut Oil Toothpaste - 9.99$</p>
+                        </div>
+                        <div class="swiper-slide products__slide">
+                            <img src="./images/blue.jfif" alt="product"  height="auto" width="100%" class="products__image">
+                            <p class="products__title">River Mint + Green Tea Toothpaste - 10.00$</p>
+                        </div>
+                        <div class="swiper-slide products__slide">
+                            <img src="./images/double.jfif" alt="product" height="auto" width="100%" class="products__image">
+                            <p class="products__title">Starter Kit - 22.00$</p>
+                        </div>
+                        <div class="swiper-slide products__slide">
+                            <img src="./images/brush.jfif" alt="product"  height="auto" width="100%" class="products__image">
+                            <p class="products__title">Biodegradable Toothbrush 6.0$</p>
+                        </div>
+                        <div class="swiper-slide products__slide">
+                            <img src="./images/paste.jfif" alt="product"  height="auto" width="100%" class="products__image">
+                            <p class="products__title">Vitamin B12 Mint + Coconut Oil Toothpaste - 9.99$</p>
+                        </div>
+                        <div class="swiper-slide products__slide">
+                            <img src="./images/blue.jfif" alt="product"  height="auto" width="100%" class="products__image">
+                            <p class="products__title">River Mint + Green Tea Toothpaste - 10.00$</p>
+                        </div>
+                        <div class="swiper-slide products__slide">
+                            <img src="./images/double.jfif" alt="product"  height="auto" width="100%" class="products__image">
+                            <p class="products__title">Starter Kit - 22.00$</p>
+                        </div>
+                        <div class="swiper-slide products__slide">
+                            <img src="./images/brush.jfif" alt="product"  height="auto" width="100%" class="products__image">
+                            <p class="products__title">Biodegradable Toothbrush 6.0$</p>
+                        </div>
+                    </div>
+                    <div class="products__buttons">
+                        <div class="products__prev">next</div>
+                        <div class="products__next">prev</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="stroke">
+            <div class="stroke__slider swiper">
+                <ul class="stroke__wrapper swiper-wrapper">
+                    <li class="stroke__slide swiper-slide"><h2>Vitamins.</h2></li>
+                    <li class="stroke__slide swiper-slide"><h2>Vegan.</h2></li>
+                    <li class="stroke__slide swiper-slide"><h2>Cruelty Free.</h2></li>
+                </ul>
+            </div>        
+        </section>
+        <section class="features" id="better">
+            <ul class="features__container">
+                <li class="features__content">
+                    <div class="features__img-container">
+                        <img src="./images/feature1.png" alt="feature" height="auto" class="features__image">
+                    </div>
+                    <div class="features__item">
+                        <svg class="features__icon" width="40px" height="40px">
+                            <use href="./images/svg/icons.svg#gulp"/>
+                        </svg>
+                        <h2 class="features__title">
+                            Made with biodegradable tubes.
+                        </h2>
+                        <p class="features__text">We think about our footprint, almost as much as our teeth. Every year 1,500,000,000 toothpaste tubes enter landfill. And live there for 500+ years.</p>
+                        <p class="features__text">We found a better way – a biodegradable toothpaste tube. The first of its kind in Australia. Our game-changing tube breaks down in landfill in just 6-10 years.</p>
+                        <p class="features__text">Make a difference, every time you brush. (That’s twice a day if you’re playing along at home.)</p>
+                    </div>
+                </li>
+                <li class="features__content_reverse">
+                    <div class="features__item">
+                        <svg class="features__icon" width="40px" height="40px">
+                            <use href="./images/svg/icons.svg#flower"/>
+                        </svg>
+                        <h2 class="features__title">
+                            Made with biodegradable tubes.
+                        </h2>
+                        <p class="features__text">We think about our footprint, almost as much as our teeth. Every year 1,500,000,000 toothpaste tubes enter landfill. And live there for 500+ years.</p>
+                        <p class="features__text">We found a better way – a biodegradable toothpaste tube. The first of its kind in Australia. Our game-changing tube breaks down in landfill in just 6-10 years.</p>
+                        <p class="features__text">Make a difference, every time you brush. (That’s twice a day if you’re playing along at home.)</p>
+                    </div>
+                    <div class="features__img-container">
+                        <img src="./images/feature2.jfif" alt="feature" height="auto" class="features__image">
+                    </div>
+                </li>
+                <li class="features__content">
+                    <div class="features__img-container">
+                        <img src="./images/feature3.jfif" alt="feature" height="auto" class="features__image">
+                    </div>
+                    <div class="features__item">
+                        <svg class="features__icon" width="40px" height="40px">
+                            <use href="./images/svg/icons.svg#green"/>
+                        </svg>
+                        <h2 class="features__title">
+                            Made with biodegradable tubes.
+                        </h2>
+                        <p class="features__text">We think about our footprint, almost as much as our teeth. Every year 1,500,000,000 toothpaste tubes enter landfill. And live there for 500+ years.</p>
+                        <p class="features__text">We found a better way – a biodegradable toothpaste tube. The first of its kind in Australia. Our game-changing tube breaks down in landfill in just 6-10 years.</p>
+                        <p class="features__text">Make a difference, every time you brush. (That’s twice a day if you’re playing along at home.)</p>
+                    </div>
+                </li>               
+            </ul>
+        </section>
+        <section>
+            <div class="container stand">
+                <h2 class="stand__title">What we stand for</h2>
+                <ul class="stand__list">
+                    <li class="stand__item">
+                        <svg class="stand__icon" width="57px" height="57px">
+                            <use href="./images/svg/icons.svg#green"/>
+                        </svg>
+                        <p class="stand__text">
+                            Vegan Friendly
+                        </p>
+                    </li>
+                    <li class="stand__item">
+                        <img src="./images/gluten.png" alt="Vegan Friendly" width="57px" height="auto" class="stand__icon">
+                        <p class="stand__text">
+                            Vegan Friendly
+                        </p>
+                    </li>
+                    <li class="stand__item">
+                        <svg class="stand__icon" width="57px" height="57px">
+                            <use href="./images/svg/icons.svg#flower"/>
+                        </svg>
+                        <p class="stand__text">
+                            Vegan Friendly
+                        </p>
+                    </li>
+                    <li class="stand__item">
+                        <img src="./images/teeth.png" alt="Vegan Friendly" width="57px" height="auto" class="stand__icon">
+                        <p class="stand__text">
+                            Vegan Friendly
+                        </p>
+                    </li>
+                    <li class="stand__item">
+                        <img src="./images/heart.png" alt="Vegan Friendly" width="57px" height="auto" class="stand__icon">
+                        <p class="stand__text">
+                            Vegan Friendly
+                        </p>
+                    </li>
+                    <li class="stand__item">
+                        <img src="./images/krol.png" alt="Vegan Friendly" width="57px" height="auto" class="stand__icon">
+                        <p class="stand__text">
+                            Vegan Friendly
+                        </p>
+                    </li>
+                    <li class="stand__item">
+                        <svg class="stand__icon" width="57px" height="57px">
+                            <use href="./images/svg/icons.svg#gulp"/>
+                        </svg>
+                        <p class="stand__text">
+                            Vegan Friendly
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="get">
+            <div class="get__image">
+                <img src="./images/girls.jfif" alt="girls">
+            </div>
+            <div class="get__content">
+                <h2 class="get__title">
+                    Get it in your mouth.
+                </h2>
+                <button class="get__button" type="button" data-modal-open>
+                    shopp all products
+                </button>
+            </div>
+        </section>
+        <section>
+            <ul class="container comments">
+                <li class="comment">
+                    <ul class="comment__stars">
+                        <li><img src="./images/star.png" alt="5 stars" width="14px" height="14px"></li>
+                        <li><img src="./images/star.png" alt="5 stars" width="14px" height="14px"></li>
+                        <li><img src="./images/star.png" alt="5 stars" width="14px" height="14px"></li>
+                        <li><img src="./images/star.png" alt="5 stars" width="14px" height="14px"></li>
+                        <li><img src="./images/star.png" alt="5 stars" width="14px" height="14px"></li>
+                    </ul>
+                    <p class="comment__title">
+                        Gracie - May 10, 2021
+                    </p>
+                    <p class="comment__content">This toothpaste is super cute in my bathroom - no more ugly toothpaste tubes. And it's biodegradable, win-win!</p>
+                </li>
+                <li class="comment">
+                    <ul class="comment__stars">
+                        <li><img src="./images/star.png" alt="5 stars" width="14px" height="14px"></li>
+                        <li><img src="./images/star.png" alt="5 stars" width="14px" height="14px"></li>
+                        <li><img src="./images/star.png" alt="5 stars" width="14px" height="14px"></li>
+                        <li><img src="./images/star.png" alt="5 stars" width="14px" height="14px"></li>
+                        <li><img src="./images/star.png" alt="5 stars" width="14px" height="14px"></li>
+                    </ul>
+                    <p class="comment__title">
+                        Gracie - May 10, 2021
+                    </p>
+                    <p class="comment__content">This toothpaste is super cute in my bathroom - no more ugly toothpaste tubes. And it's biodegradable, win-win!</p>
+                </li>
+                <li class="comment">
+                    <ul class="comment__stars">
+                        <li><img src="./images/star.png" alt="5 stars" width="14px" height="14px"></li>
+                        <li><img src="./images/star.png" alt="5 stars" width="14px" height="14px"></li>
+                        <li><img src="./images/star.png" alt="5 stars" width="14px" height="14px"></li>
+                        <li><img src="./images/star.png" alt="5 stars" width="14px" height="14px"></li>
+                        <li><img src="./images/star.png" alt="5 stars" width="14px" height="14px"></li>
+                    </ul>
+                    <p class="comment__title">
+                        Gracie - May 10, 2021
+                    </p>
+                    <p class="comment__content">This toothpaste is super cute in my bathroom - no more ugly toothpaste tubes. And it's biodegradable, win-win!</p>
+                </li>
+            </ul>
+        </section>
+    </main>
+    <footer class="footer">
+        <p class="footer__Copyright">
+            ©Copyright – ROCC Naturals 2021.
+        </p>
+        <ul class="footer__list">
+            <li><a href="#">privacy policy</a></li>
+            <li><a href="#">shipping + returns</a></li>
+            <li><a href="#">returns</a></li>
+            <li><a href="#">terms & conditions</a></li>
+        </ul>
+        <ul class="footer__socials">
+            <li class="footer__social">
+                <a href="#">
+                    <svg class="footer__icon" width="15px" height="15px">
+                        <use href="./images/svg/icons.svg#instagram"/>
+                    </svg>
+                </a>
+            </li>
+            <li class="footer__social">
+                <a href="">
+                    <svg class="footer__icon" width="15px" height="15px">
+                        <use href="./images/svg/icons.svg#twitter"/>
+                    </svg>
+                </a>
+            </li>
+            <li class="footer__social">
+                <a href="">
+                    <svg class="footer__icon" width="15px" height="15px">
+                        <use href="./images/svg/icons.svg#facebook"/>
+                    </svg>
+                </a>
+            </li>
+        </ul>
+        <form action="#" class="footer__form" id="sub">
+            <input type="email" class="footer__input" placeholder="email">
+            <button type="submit" class="footer__button">subscribe</button>
+        </form>
+    </footer>  
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+          <h2 class="modal__title">Leave your data here, we will contact you</h2>
+          <form id="subscribe">
+          <ul>
+            <li>
+              <label for="name" class="modal__label">Name</label>
+              <div class="modal__checkbox-fix">
+              <input type="text" id="name" class="modal__input" required>
+              <svg class="modal__icon" width="18px" height="18px">
+                <use href="./images/svg/icons.svg#man"></use>    
+              </svg>
+              </div>
+            </li>
+            <li>
+              <label for="phone" class="modal__label">Phone</label>
+              <div class="modal__checkbox-fix">
+              <input type="tel" id="phone" class="modal__input" required>
+              <svg class="modal__icon" width="18px" height="18px">
+                <use href="./images/svg/icons.svg#telephone"></use>    
+              </svg>
+              </div>
+            </li>
+            <li>
+              <label for="email" class="modal__label">Email</label>
+              <div class="modal__checkbox-fix">
+              <input type="email" id="email" class="modal__input" required>
+              <svg class="modal__icon" width="18px" height="18px">
+                <use href="./images/svg/icons.svg#email"></use>    
+              </svg>
+              </div>
+            </li>
+            <li class="modal__li_checkbox"> 
+              <input type="checkbox" id="cbx" class="modal__checkbox-fix" style="display: none;">
+              <label for="cbx" class="modal__check">
+                <svg width="18px" height="18px" viewBox="0 0 18 18">
+                  <path d="M1,9 L1,3.5 C1,2 2,1 3.5,1 L14.5,1 C16,1 17,2 17,3.5 L17,14.5 C17,16 16,17 14.5,17 L3.5,17 C2,17 1,16 1,14.5 L1,9 Z"></path>
+                  <polyline points="1 9 7 14 15 4"></polyline>
+                </svg>
+                <span class="modal__span-text">I agree to the newsletter</a></span>
+              </label>
+            </li>
+            <li class="modal__li_button">
+              <button class="modal__submit" type="submit">Send</button>
+            </li>
+          </ul>
+          <button type="button" class="modal__exit-button" data-modal-close>
+            <svg width="10px" height="10px">
+              <use href="./images/svg/icons.svg#exit"></use>    
+            </svg>
+          </button>
+          </form>
+        </div>
+        </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./js/swiper.js"></script>
+    <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+</body>
+</html>

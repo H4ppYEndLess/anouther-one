@@ -1,0 +1,54 @@
+@import './variables';
+@import './mixin.scss';
+
+header {
+    z-index: 5;
+    background-color: $main-color;
+    padding: 30px 60px;
+    color: white;
+    font-size: 14px;
+    line-height: 32px;
+    letter-spacing: 0.2px;
+    display: flex;
+    align-items: center;
+    @include media(570px){
+        padding: 15px 30px;   
+    }
+    
+}
+
+.header{
+    &__list {
+        display: flex;
+        gap: 35px;
+        @include media(570px){
+            display: none;   
+        }
+    }
+
+    &__contact{
+        padding: 5px 25px;
+        background-color: transparent;
+        border: 1px solid $second-color;
+        transition: 250ms ease-in;
+        margin-left: auto;
+        border-radius: 3px;
+        color: $second-color;
+        cursor: pointer;
+        @include media(570px){
+            margin-left: unset;
+            margin-right: auto;   
+        }
+        &:hover{
+            color: $main-color;
+            background-color: $second-color;        
+        }
+    }
+
+    &__item {
+        transition: 250ms ease-in;
+        &:hover{
+            color: $second-color;
+        }
+    }
+}
