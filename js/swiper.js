@@ -1,41 +1,43 @@
-const swiper = new Swiper('.products', {
-  navigation:{
-    nextEl:'.products__next',
-    prevEl:'.products__prev'
-  },
+const swiper = new Swiper('.hero__slider', {
       loop:true,
-      spaceBetween: 19,
-      slideToClickedSlide:true,
-      breakpoints: {
-        // when window width is >= 320px
-        1024:{
-          slidesPerView:4
-        },
-        650:{
-          slidesPerView:2,
-        },
-        0:{
-          slidesPerView:1,
-        },
-      }
+      pagination:{
+        el: '.hero__pagination',
+        clickable: true,
+      },
+      autoplay:{
+        delay:5000
+      },
 });
 
-const slider = new Swiper('.stroke__slider', {
-  // navigation:{
-  //   nextEl:'.slider__next',
-  //   prevEl:'.slider__prev'
-  // },
+const nature = new Swiper('.nature__slider', {
       speed:1000,
+      slidesPerView:'auto',
+      spaceBetween:20,
       centeredSlides:true,
-      loop:true,
-      slidesPerView:1,
-      spaceBetween: 40,
       slideToClickedSlide:true,
-      allowTouchMove:false,
-      autoplay:{
-        delay:1000
+      loop:true,
+      768:{
+        slidesPerView:2,
       },
-      breakpoints: {
-        // when window width is >= 320px
-      }
+      480:{
+        slidesPerView:2,
+      },
+      0:{
+        slidesPerView:1,
+      },
+      autoplay:{
+        delay:3000
+      },
+});
+
+const explore = new Swiper('.explore__slider', {
+  loop:true,
+  speed:1000,
+  pagination:{
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+  autoplay:{
+    delay:3000
+  },
 });
